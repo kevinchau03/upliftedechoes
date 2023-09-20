@@ -5,14 +5,18 @@ import NewsItem from './components/newsItem';
 function App() {
   return (
     <div className="App">
-      <div class="main">
-        <p class="main-title">Uplifted Echoes</p>
-        <p class="main-subtitle">Your Daily Dose of Serotonin</p>
+        <p className="main-title">Uplifted Echoes</p>
+        <p className="main-subtitle">Your Daily Dose of Serotonin</p>
         <SearchBar />
-      </div>
-      <div class="news-container">
-        <NewsItem />
-        <NewsItem />
+      <div className="news-container">
+        <div className="news-group">
+          <NewsItem />
+          <NewsItem />
+        </div>
+        <div className='news-group'>
+          <NewsItem />
+          <NewsItem />
+        </div>
       </div>
     </div>
   );
