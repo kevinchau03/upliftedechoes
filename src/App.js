@@ -1,12 +1,19 @@
 import './App.css';
 import SearchBar from './components/searchBar';
+import NewsItem from './components/newsItem';
 
 function App() {
   return (
     <div className="App">
-      <h1>Uplifted Echoes</h1>
-      <h2>Your Daily Dose of Serotonin!!!</h2>
-      <SearchBar />
+      <div class="main">
+        <p class="main-title">Uplifted Echoes</p>
+        <p class="main-subtitle">Your Daily Dose of Serotonin</p>
+        <SearchBar />
+      </div>
+      <div class="news-container">
+        <NewsItem />
+        <NewsItem />
+      </div>
     </div>
   );
 }
